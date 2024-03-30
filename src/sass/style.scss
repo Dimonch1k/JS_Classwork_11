@@ -1,0 +1,17 @@
+// import libraries
+
+// import base styles
+@import "./base/_func.scss";
+@import "./base/_mixins.scss";
+@import "./base/_variables.scss";
+
+// import static components
+@import url('./components/_header.scss');
+@import url('./components/_footer.scss');
+
+
+// import dynamic components
+
+// import pages
+// @import url('./pages/page_about.scss');
+@import url('./pages/page-landing.scss');
