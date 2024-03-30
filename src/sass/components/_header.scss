@@ -1,15 +1,335 @@
-.header{
-    margin: 24px 100px 0 100px;
-
-    .container {
-        .row {
-            .col-12 {
-                display: inline-flex;
-            }
-        }
-    }
+.header {
+    height: 71px;
+    width: 1240px;
+    flex-shrink: 0;
+    margin: 24px 0 0 0;
+    border-bottom: 1px solid #404040;
+    margin-bottom: 70px;
 }
 
-ul li {
-    list-style-type: none;
+.logo-img {
+    object-fit: cover;
+    width: 240px;
+    flex-shrink: 0;
+    margin-right: 125px;
+    margin-left: -25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-right: 5%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+    color: var(--text, #404040);
+    font-family: sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    white-space: nowrap;
+    transition: .3s;
+}
+
+nav ul li:hover a {
+    transition: .3s;
+    color: #FF783E;
+}
+
+.leave_request_btn {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: 1px solid var(--text, #404040);
+    background: transparent;
+    margin-right: 1%;
+    font-size: large;
+}
+
+.leave_request_btn:hover {
+    background: linear-gradient(45deg, #FF783E, rgb(251, 72, 72));
+    color: #fff;
+}
+
+select {
+    color: #FFF;
+    background: #27C1C2;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding: 4px 8px 4px 16px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+.landing {
+    width: 1240px;
+    height: 7133px;
+}
+
+
+
+.beat_boldness {
+    width: 1240px;
+    height: 768px;
+    position: relative;
+    margin-bottom: 162px;
+}
+
+.hair_transplants {
+    height: 529px;
+    display: flex;
+    align-items: center;
+    background: url("../../img/G_global.svg") no-repeat;
+    background-position: 100% 44.5%;
+}
+
+.hair_transplants_block {
+    max-width: 597px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section_title {
+    color: var(--text, #404040);
+    font-family: sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.title_color {
+    color: #FF783E;
+}
+
+.verification_mark {
+    position: relative;
+    margin-left: -53px;
+}
+
+.verification_text {
+    width: 245px;
+    color: var(--text, #404040);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.book_consultation_btn {
+    display: flex;
+    width: max-content;
+    height: 54px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, #27BDBE 91.72%));
+    background-size: 300%;
+    background-position: left;
+    transition: 1s background-position ease-in-out;
+    border: none;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.book_consultation_btn:hover {
+    background-position: right;
+}
+
+.before-human {
+    margin-top: -155px;
+    margin-left: 15px;
+}
+
+.after-human {
+    margin-left: -50px;
+    margin-bottom: -70px;
+}
+
+.before-label,
+.after-label {
+    position: absolute;
+    display: inline-flex;
+    padding: 4px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2.200000047683716px);
+}
+
+.before-label {
+    top: -30%;
+    right: 52%;
+}
+
+.after-label {
+    top: 10px;
+    right: 15px;
+}
+
+.boldness_switcher_img {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    bottom: -15px;
+    left: 15px;
+}
+
+.boldness_arrow {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 50%;
+    filter: drop-shadow(0px 10px 10px rgba(56, 114, 151, 0.10));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boldness_arrow:hover {
+    background: #a9f0ef;
+}
+
+.qualities {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: start;
+    width: 1240px;
+    gap: 20px;
+}
+
+.quality {
+    display: flex;
+    height: 239px;
+    width: 295px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sub-title {
+    color: var(--text, #404040);
+
+    font-family: sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.quality_text {
+    color: var(--text, #404040);
+    width: 264px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.quality_img {
+    position: relative;
+    left: -52px;
+}
+
+
+
+.patients_results {
+    width: 1240px;
+    height: 579px;
+    flex-shrink: 0;
+}
+
+.videos_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.patient_video_block {
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+    height: 465px;
+
+}
+
+.patient_video_1 {
+    background: url("../../img/patients_video_1.svg") no-repeat;
+}
+
+.patient_video_2 {
+    background: url("../../img/patients_video_2.svg") no-repeat;
+}
+
+.patient_video {
+    width: 610px;
+    height: 334px;
+    margin-bottom: 24px;
+}
+
+.blue-line {
+    margin-bottom: 12px;
+}
+
+.video_text {
+    color: var(--text, #404040);
+    font-family: sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 8px;
 }
