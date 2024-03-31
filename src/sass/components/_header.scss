@@ -303,15 +303,15 @@ select {
     flex-direction: column;
     width: 610px;
     height: 465px;
-
+    margin-top: 48px;
 }
 
 .patient_video_1 {
-    background: url("../../img/patients_video_1.svg") no-repeat;
+    background: url("../../img/patients_video_1.jpg");
 }
 
 .patient_video_2 {
-    background: url("../../img/patients_video_2.svg") no-repeat;
+    background: url("../../img/patients_video_1.jpg");
 }
 
 .patient_video {
