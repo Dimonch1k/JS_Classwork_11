@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
 .header {
     height: 71px;
     width: 1240px;
@@ -19,7 +21,7 @@ nav {
     display: flex;
     align-items: center;
     width: max-content;
-    margin-right: 5%;
+    margin-right: 45px;
 }
 
 nav ul {
@@ -36,18 +38,18 @@ nav ul li a {
     text-decoration: none;
 
     color: var(--text, #404040);
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     display: flex;
     white-space: nowrap;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 nav ul li:hover a {
-    transition: .3s;
-    color: #FF783E;
+    transition: 0.3s;
+    color: #ff783e;
 }
 
 .leave_request_btn {
@@ -61,18 +63,18 @@ nav ul li:hover a {
     border: 1px solid var(--text, #404040);
     background: transparent;
     margin-right: 1%;
-    font-size: large;
+    font-size: 16px;
 }
 
 .leave_request_btn:hover {
-    background: linear-gradient(45deg, #FF783E, rgb(251, 72, 72));
+    background: linear-gradient(45deg, #ff783e, rgb(251, 72, 72));
     color: #fff;
 }
 
 select {
-    color: #FFF;
-    background: #27C1C2;
-    font-family: sans-serif;
+    color: #fff;
+    background: #27c1c2;
+    font-family: "Manrope", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -83,18 +85,10 @@ select {
     border-radius: 20px;
 }
 
-
-
-
-
-
-
 .landing {
     width: 1240px;
     height: 7133px;
 }
-
-
 
 .beat_boldness {
     width: 1240px;
@@ -120,7 +114,7 @@ select {
 
 .section_title {
     color: var(--text, #404040);
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
@@ -128,7 +122,7 @@ select {
 }
 
 .title_color {
-    color: #FF783E;
+    color: #ff783e;
 }
 
 .verification_mark {
@@ -139,7 +133,7 @@ select {
 .verification_text {
     width: 245px;
     color: var(--text, #404040);
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -156,14 +150,14 @@ select {
     gap: 8px;
     flex-shrink: 0;
     border-radius: 30px;
-    background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, #27BDBE 91.72%));
+    background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, #27bdbe 91.72%));
     background-size: 300%;
     background-position: left;
     transition: 1s background-position ease-in-out;
     border: none;
 
     color: white;
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -184,8 +178,7 @@ select {
     margin-bottom: -70px;
 }
 
-.before-label,
-.after-label {
+:is(.before-label, .after-label) {
     position: absolute;
     display: inline-flex;
     padding: 4px 16px;
@@ -194,7 +187,8 @@ select {
     gap: 8px;
 
     border-radius: 30px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
+        linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(2.200000047683716px);
 }
@@ -224,7 +218,7 @@ select {
     flex-shrink: 0;
     background: #fff;
     border-radius: 50%;
-    filter: drop-shadow(0px 10px 10px rgba(56, 114, 151, 0.10));
+    filter: drop-shadow(0px 10px 10px rgba(56, 114, 151, 0.1));
 
     display: flex;
     justify-content: center;
@@ -256,14 +250,14 @@ select {
     gap: 7px;
 
     border-radius: 20px;
-    background: #FFF;
-    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.10);
+    background: #fff;
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
 }
 
 .sub-title {
     color: var(--text, #404040);
 
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -274,6 +268,7 @@ select {
     color: var(--text, #404040);
     width: 264px;
     font-size: 16px;
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -284,12 +279,13 @@ select {
     left: -52px;
 }
 
-
-
 .patients_results {
     width: 1240px;
     height: 579px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .videos_block {
@@ -303,7 +299,6 @@ select {
     flex-direction: column;
     width: 610px;
     height: 465px;
-    margin-top: 48px;
 }
 
 .patient_video_1 {
@@ -311,7 +306,14 @@ select {
 }
 
 .patient_video_2 {
-    background: url("../../img/patients_video_1.jpg");
+    background: url("../../img/patients_video_2.jpg");
+}
+
+:is(.patient_video_1, .patient_video_2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .patient_video {
@@ -326,10 +328,159 @@ select {
 
 .video_text {
     color: var(--text, #404040);
-    font-family: sans-serif;
+    font-family: "Manrope", sans-serif;
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-top: 8px;
+}
+
+.globalmedik_clinic {
+    width: 1240px;
+    height: 680px;
+    flex-shrink: 0;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery {
+    width: 610px;
+    height: 566px;
+    flex-shrink: 0;
+    background-color: #27bdbe;
+}
+
+.description {
+    width: 610px;
+    flex-shrink: 0;
+    font-family: "Manrope", sans-serif;
+    color: var(--text, #404040);
+    line-height: normal;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.advantages_text {
+    width: 100%;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #38c3c0;
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.desc_title {
+    font-weight: 700;
+}
+
+:is(.location_text, .offers_text, .book_consultation_btn) {
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+.our_doctors {
+    margin-top: 120px;
+    width: 100%;
+    height: 681px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    color: var(--text, #404040);
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+}
+
+.about_doctors {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 925px;
+    gap: 24px;
+}
+
+.doctors {
+    display: flex;
+    height: 371px;
+    gap: 20px;
+}
+
+.doctor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.doctor_img {
+    width: 295px;
+    height: 320px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.doctor_name {
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid var(--text, #404040);
+    background: #FFF;
+    font-weight: 700;
+}
+
+.doctors_qualities_text {
+    font-weight: 600;
+}
+
+
+.all_inclusive_packet {
+    width: 1240px;
+    height: 523px;
+    flex-shrink: 0;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.all_inclusive__packets {
+    display: flex;
+    gap: 20px;
+}
+
+.all_inclusive__packet {
+    display: flex;
+    flex-direction: column;
+}
+
+.packet__img {
+    width: 295px;
+    height: 195px;
+    border-radius: 20px;
+}
+
+.comfort_transfer-img {
+    background: url("../../img/comfortable_tranfer.jpg") no-repeat;
+}
+
+.lux_hotel-img {
+    background: url("../../img/lux_hotel.jpg") no-repeat;
+}
+
+.best_transplantation-img {
+    background: url("../../img/best_hair_transplants.jpg") no-repeat;
+}
+
+.care_products-img {
+    background: url("../../img/care_products.jpg");
 }
