@@ -483,4 +483,17 @@ select {
 
 .care_products-img {
     background: url("../../img/care_products.jpg");
+    z-index: 1;
+}
+
+.done_ellipse {
+    background-image: url("../../img/ellipse.svg") no-repeat;
+    z-index: 2;
+}
+
+
+.packet_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
