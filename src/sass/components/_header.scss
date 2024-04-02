@@ -145,7 +145,6 @@ select.lang_switcher {
   width: max-content;
   height: 54px;
   padding: 16px 24px;
-  margin: 0 !important;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -163,6 +162,10 @@ select.lang_switcher {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+.book_consultation_btn:hover {
+  background-position: right;
 }
 
 .before-human {
@@ -185,7 +188,7 @@ select.lang_switcher {
 
   border-radius: 30px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
-  linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
+    linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(2.200000047683716px);
 }
@@ -534,6 +537,7 @@ select.lang_switcher {
 }
 
 .suitable_package {
+  position: relative;
   border-radius: 20px;
   border: 1px solid #5BE1FF;
   background: #FFF;
@@ -559,7 +563,7 @@ select.lang_switcher {
 
 .suitable_package__location {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #787878;
   text-decoration: underline;
 }
@@ -572,13 +576,14 @@ select.lang_switcher {
 ul.includes_cost_list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   padding: 0;
   margin: 4px 0 0 0;
 }
 
 ul.includes_cost_list li {
   display: flex;
+  align-items: center;
   gap: 12px;
   font-size: 14px;
   font-weight: normal;
@@ -597,6 +602,12 @@ ul.includes_cost_list li {
 
 }
 
+.select_suitable_options {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
 select.global_medic_discounts,
 select.global_medic_support {
   display: flex;
@@ -611,4 +622,69 @@ select.global_medic_support {
   color: #787878;
   font-size: 14px;
   font-weight: 600;
+
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../../img/suitable_select_arrow.svg") no-repeat 98.5% !important;
+}
+
+.discounted_package_price {
+  color: #787878;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.real_package_price {
+  color: var(--dark-grey, #303535);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact_the_clinic {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 30px;
+  background-image: var(--Button, linear-gradient(92deg, #6DDBD9 4.42%, #27bdbe 91.72%));
+  background-size: 300%;
+  background-position: left;
+  transition: 1s background-position ease-in-out;
+  border: none;
+
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact_the_clinic:hover {
+  background-position: right;
+  transition: 1s background-position ease-in-out;
+}
+
+
+.suitable_package_special_price {
+  position: absolute;
+  display: inline-flex;
+  height: 35px;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  border-radius: 30px;
+  flex-shrink: 0;
+  top: -17.5px;
+  right: 0;
+
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.suitable_package_1_special_price {
+  background: linear-gradient(92deg, #FFC0A5 0.82%, #FF783E 99.57%);
 }
