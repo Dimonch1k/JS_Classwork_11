@@ -66,7 +66,7 @@ nav ul li:hover a {
 }
 
 .leave_request_btn:hover {
-  background: linear-gradient(45deg, #ff783e, rgb(251, 72, 72));
+  background-image: linear-gradient(45deg, #f42b03 0%, #f48003 74%);
   color: #fff;
   border: none;
   padding: 9px 25px;
@@ -227,7 +227,7 @@ select.lang_switcher {
 }
 
 .boldness_arrow:hover {
-  background: #a9f0ef;
+  background: radial-gradient(rgb(255, 255, 255) 10%, #b9fffe 60%, #5fe4e4 100%);
 }
 
 .qualities {
@@ -668,7 +668,16 @@ select.global_medic_support {
 
 .suitable_package_special_price {
   position: absolute;
-  display: inline-flex;
+  display: flex;
+  height: 35px;
+  top: -17.5px;
+  right: 0;
+  width: max-content;
+  height: max-content;
+}
+
+.special_price_num {
+  display: flex;
   height: 35px;
   padding: 4px 16px;
   justify-content: center;
@@ -677,14 +686,17 @@ select.global_medic_support {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
   border-radius: 30px;
   flex-shrink: 0;
-  top: -17.5px;
-  right: 0;
 
   color: #FFF;
   font-size: 14px;
   font-weight: 700;
 }
 
-.suitable_package_1_special_price {
+.suitable_package_1_special_price,
+.suitable_package_3_special_price {
   background: linear-gradient(92deg, #FFC0A5 0.82%, #FF783E 99.57%);
+}
+
+.suitable_package_2_special_price {
+  background: #6DDBD9;
 }

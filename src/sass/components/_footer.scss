@@ -1,8 +1,142 @@
-.footer {
+footer.footer {
   margin-top: 120px;
+  padding: 56px 100px;
   width: 100%;
   height: 353px;
-  display: flex;
   flex-shrink: 0;
   background-color: #27BDBE;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  position: relative;
+}
+
+div.footer__content {
+  display: flex;
+  justify-content: center;
+}
+
+div.hair-img_socialMedia {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  gap: 24px;
+  margin-right: 113px;
+}
+
+div.social_media_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+div.social_media_heading {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  width: max-content;
+}
+
+div.social_media_images {
+  display: flex;
+  gap: 12px;
+}
+
+div.social_media_img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .6s ease-in-out;
+}
+
+div.social_media_img:hover {
+  background: #FF783E;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+div.footer__main_content {
+  height: 162px;
+  display: flex;
+  gap: 176px;
+  margin-top: 5px;
+}
+
+div.footer_links_groups {
+  display: flex;
+  gap: 95px;
+}
+
+ul.footer_links_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 7px;
+}
+
+ul.footer_links_group li {
+  list-style-type: none;
+}
+
+ul.footer_links_group li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+ul.footer_links_group li a:hover {
+  text-decoration: underline;
+}
+
+
+
+div.contact_us_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+}
+
+div.contact_us_heading {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+div.contact_us_social_media {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+button.callback_btn {
+  display: flex;
+  padding: 16px 50px;
+  gap: 8px;
+
+  border: none;
+  border-radius: 30px;
+  background-image: var(--Button, linear-gradient(93deg, #FFF 0%, rgb(195, 251, 250) 100%));
+  background-size: 300%;
+  background-position: left;
+  transition: 1s background-position ease-in-out;
+
+  box-shadow: 0px 10px 10px 0px rgba(55, 113, 151, 0.15);
+
+  color: #3CADAB;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+button.callback_btn:hover {
+  background-position: right;
 }
