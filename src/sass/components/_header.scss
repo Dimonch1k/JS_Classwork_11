@@ -89,6 +89,12 @@ select.lang_switcher {
 
 
 
+
+
+
+
+
+
 main.landing {
   width: 1240px;
   height: 7133px;
@@ -128,9 +134,18 @@ span.title_color {
   color: #ff783e;
 }
 
+div.verification_ellipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 56px;
+  height: 56px;
+  background: url("../../img/verification_ellipse.svg") no-repeat;
+}
+
 img.verification_mark {
   position: relative;
-  margin-left: -53px;
 }
 
 p.verification_text {
@@ -172,7 +187,6 @@ button.book_consultation_btn:hover {
 }
 
 
-
 :is(div.before-label, div.after-label) {
   position: absolute;
   display: inline-flex;
@@ -208,7 +222,8 @@ img.after-human {
   margin-bottom: -70px;
 }
 
-div.boldness_switcher_img {
+div.boldness_switcher_img,
+div.suitable_packages_switcher {
   position: absolute;
   display: flex;
   gap: 20px;
@@ -217,7 +232,8 @@ div.boldness_switcher_img {
   left: 15px;
 }
 
-div.boldness_arrow {
+div.boldness_arrow,
+div.sPackage_arrow {
   width: 62px;
   height: 62px;
   flex-shrink: 0;
@@ -296,45 +312,45 @@ section.patients_results {
   justify-content: space-between;
 }
 
-.videos_block {
+div.videos_block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.patient_video_block {
+div.patient_video_block {
   display: flex;
   flex-direction: column;
   width: 610px;
   height: 465px;
 }
 
-.patient_video_1 {
+div.patient_video_1 {
   background: url("../../img/patients_video_1.jpg");
 }
 
-.patient_video_2 {
+div.patient_video_2 {
   background: url("../../img/patients_video_2.jpg");
 }
 
-:is(.patient_video_1, .patient_video_2) {
+:is(div.patient_video_1, div.patient_video_2) {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
 }
 
-.patient_video {
+div.patient_video {
   width: 610px;
   height: 334px;
   margin-bottom: 24px;
 }
 
-.blue-line {
+svg.blue-line {
   margin-bottom: 12px;
 }
 
-.video_text {
+div.video_text {
   color: var(--text, #404040);
   font-family: "Manrope", sans-serif;
   font-size: 17px;
@@ -344,7 +360,10 @@ section.patients_results {
   margin-top: 8px;
 }
 
-.globalmedik_clinic {
+
+
+
+section.globalmedik_clinic {
   width: 1240px;
   height: 680px;
   flex-shrink: 0;
@@ -354,14 +373,14 @@ section.patients_results {
   justify-content: space-between;
 }
 
-.gallery {
+div.gallery {
   width: 610px;
   height: 566px;
   flex-shrink: 0;
   background-color: #27bdbe;
 }
 
-.description {
+div.description {
   width: 610px;
   flex-shrink: 0;
   font-family: "Manrope", sans-serif;
@@ -373,7 +392,7 @@ section.patients_results {
   gap: 40px;
 }
 
-.advantages_text {
+div.advantages_text {
   width: 100%;
   padding: 40px;
   border-radius: 20px;
@@ -383,18 +402,20 @@ section.patients_results {
   font-weight: 500;
 }
 
-.desc_title {
+span.desc_title {
   font-weight: 700;
 }
 
-:is(.location_text, .offers_text, .book_consultation_btn) {
+:is(div.location_text, div.offers_text, button.book_consultation_btn) {
   margin-left: 40px;
   font-size: 18px;
   font-weight: 500;
 }
 
 
-.our_doctors {
+
+
+section.our_doctors {
   margin-top: 120px;
   width: 100%;
   height: 681px;
@@ -408,13 +429,13 @@ section.patients_results {
   line-height: normal;
 }
 
-.about_doctors_block {
+div.about_doctors_block {
   display: flex;
   justify-content: end;
   height: 100%;
 }
 
-.about_doctors {
+div.about_doctors {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -422,25 +443,25 @@ section.patients_results {
   height: 100%;
 }
 
-.doctors {
+div.doctors {
   display: flex;
   height: 371px;
   gap: 20px;
 }
 
-.doctor {
+div.doctor {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
 
-.doctor_img {
+img.doctor_img {
   flex-shrink: 0;
   border-radius: 20px;
 }
 
-.doctor_name {
+span.doctor_name {
   padding: 8px 16px;
   border-radius: 30px;
   border: 1px solid var(--text, #404040);
@@ -448,9 +469,11 @@ section.patients_results {
   font-weight: 700;
 }
 
-.doctors_qualities_text {
+div.doctors_qualities_text {
   font-weight: 600;
 }
+
+
 
 
 section.all_inclusive_packet {
@@ -474,31 +497,31 @@ div.all_inclusive__packet {
   width: 295px;
 }
 
-.packet__img {
+div.packet__img {
   width: 295px;
   height: 195px;
   border-radius: 20px;
   position: relative;
 }
 
-.comfort_transfer-img {
+div.comfort_transfer-img {
   background: url("../../img/comfortable_tranfer.jpg") no-repeat;
 }
 
-.lux_hotel-img {
+div.lux_hotel-img {
   background: url("../../img/lux_hotel.jpg") no-repeat;
 }
 
-.best_transplantation-img {
+div.best_transplantation-img {
   background: url("../../img/best_hair_transplants.jpg") no-repeat;
 }
 
-.care_products-img {
+div.care_products-img {
   background: url("../../img/care_products.jpg");
   z-index: 1;
 }
 
-.done_ellipse {
+div.done_ellipse {
   position: absolute;
   right: 0;
   top: -22.5px;
@@ -514,17 +537,19 @@ div.all_inclusive__packet {
 
 }
 
-.done_mark {
+div.done_mark {
   width: 23px;
   height: 23px;
   background: url("../../img/done_mark.svg") no-repeat;
 }
 
-.packet_content {
+div.packet_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
+
 
 
 section.suitable_transplants_packages {
@@ -537,15 +562,16 @@ section.suitable_transplants_packages {
   font-size: 20px;
   font-style: normal;
   line-height: normal;
+  position: relative;
 }
 
-.suitable_packages {
+div.suitable_packages {
   display: flex;
   justify-content: space-between;
   margin-top: 45px;
 }
 
-.suitable_package {
+div.suitable_package {
   position: relative;
   border-radius: 20px;
   border: 1px solid #5BE1FF;
@@ -559,25 +585,25 @@ section.suitable_transplants_packages {
   gap: 12px;
 }
 
-.suitable_package_heading {
+div.suitable_package_heading {
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.suitable_package__title {
+div.suitable_package__title {
   font-size: 20px;
   font-weight: 700;
 }
 
-.suitable_package__location {
+div.suitable_package__location {
   font-size: 18px;
   font-weight: 500;
   color: #787878;
   text-decoration: underline;
 }
 
-.includes_cost_title {
+div.includes_cost_title {
   font-size: 16px;
   font-weight: bold;
 }
@@ -599,7 +625,7 @@ ul.includes_cost_list li {
   list-style-type: none;
 }
 
-.includes_cost_done {
+div.includes_cost_done {
   background: #FFFFFF;
   border-radius: 50%;
   width: 24px;
@@ -611,7 +637,7 @@ ul.includes_cost_list li {
 
 }
 
-.select_suitable_options {
+div.select_suitable_options {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -631,26 +657,27 @@ select.global_medic_support {
   color: #787878;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 
   -moz-appearance: none;
   appearance: none;
   background: url("../../img/suitable_select_arrow.svg") no-repeat 98.5% !important;
 }
 
-.discounted_package_price {
+span.discounted_package_price {
   color: #787878;
   font-size: 20px;
   font-weight: 500;
   text-decoration: line-through;
 }
 
-.real_package_price {
+span.real_package_price {
   color: var(--dark-grey, #303535);
   font-size: 20px;
   font-weight: 600;
 }
 
-.contact_the_clinic {
+button.contact_the_clinic {
   display: inline-flex;
   padding: 8px 16px;
   justify-content: center;
@@ -669,13 +696,13 @@ select.global_medic_support {
   font-weight: 700;
 }
 
-.contact_the_clinic:hover {
+button.contact_the_clinic:hover {
   background-position: right;
   transition: 1s background-position ease-in-out;
 }
 
 
-.suitable_package_special_price {
+div.suitable_package_special_price {
   position: absolute;
   display: flex;
   height: 35px;
@@ -685,7 +712,7 @@ select.global_medic_support {
   height: max-content;
 }
 
-.special_price_num {
+div.special_price_num {
   display: flex;
   height: 35px;
   padding: 4px 16px;
@@ -701,11 +728,19 @@ select.global_medic_support {
   font-weight: 700;
 }
 
-.suitable_package_1_special_price,
-.suitable_package_3_special_price {
+div.suitable_package_1_special_price,
+div.suitable_package_3_special_price {
   background: linear-gradient(92deg, #FFC0A5 0.82%, #FF783E 99.57%);
 }
 
-.suitable_package_2_special_price {
+div.suitable_package_2_special_price {
   background: #6DDBD9;
+}
+
+div.suitable_packages_switcher {
+  bottom: 0;
+  right: 0;
+  left: unset;
+  gap: 12px;
+  position: absolute;
 }
