@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-.header {
+header.header {
   height: 71px;
   width: 1240px;
   flex-shrink: 0;
@@ -8,7 +8,7 @@
   border-bottom: 1px solid #404040;
 }
 
-.logo-img {
+img.logo-img {
   object-fit: cover;
   width: 240px;
   flex-shrink: 0;
@@ -16,14 +16,14 @@
   margin-left: -25px;
 }
 
-nav {
+nav.header_navigation {
   display: flex;
   align-items: center;
   width: max-content;
   margin-right: 45px;
 }
 
-nav ul {
+nav.header_navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -33,7 +33,7 @@ nav ul {
   column-gap: 40px;
 }
 
-nav ul li a {
+nav.header_navigation ul li a {
   text-decoration: none;
 
   color: var(--text, #404040);
@@ -46,12 +46,12 @@ nav ul li a {
   transition: 0.3s;
 }
 
-nav ul li:hover a {
+nav.header_navigation ul li:hover a {
   transition: 0.3s;
   color: #ff783e;
 }
 
-.leave_request_btn {
+button.leave_request_btn {
   display: inline-flex;
   padding: 8px 24px;
   justify-content: center;
@@ -65,8 +65,8 @@ nav ul li:hover a {
   font-size: 16px;
 }
 
-.leave_request_btn:hover {
-  background-image: linear-gradient(45deg, #f42b03 0%, #f48003 74%);
+button.leave_request_btn:hover {
+  background: linear-gradient(45deg, #f42b03 0%, #f48003 74%);
   color: #fff;
   border: none;
   padding: 9px 25px;
@@ -86,33 +86,36 @@ select.lang_switcher {
   border-radius: 20px;
 }
 
-.landing {
+
+
+
+main.landing {
   width: 1240px;
   height: 7133px;
 }
 
-.beat_boldness {
+section.beat_boldness {
   width: 1240px;
   height: 768px;
   position: relative;
   margin-bottom: 162px;
 }
 
-.hair_transplants {
+div.hair_transplants {
   height: 529px;
   display: flex;
   align-items: center;
   background: url("../../img/G_global.svg") no-repeat 100% 44.5%;
 }
 
-.hair_transplants_block {
+div.hair_transplants_block {
   max-width: 597px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.section_title {
+h2.section_title {
   color: var(--text, #404040);
   font-family: "Manrope", sans-serif;
   font-size: 48px;
@@ -121,16 +124,16 @@ select.lang_switcher {
   line-height: 110%;
 }
 
-.title_color {
+span.title_color {
   color: #ff783e;
 }
 
-.verification_mark {
+img.verification_mark {
   position: relative;
   margin-left: -53px;
 }
 
-.verification_text {
+p.verification_text {
   width: 245px;
   color: var(--text, #404040);
   font-family: "Manrope", sans-serif;
@@ -140,7 +143,7 @@ select.lang_switcher {
   line-height: normal;
 }
 
-.book_consultation_btn {
+button.book_consultation_btn {
   display: flex;
   width: max-content;
   height: 54px;
@@ -164,21 +167,13 @@ select.lang_switcher {
   line-height: normal;
 }
 
-.book_consultation_btn:hover {
+button.book_consultation_btn:hover {
   background-position: right;
 }
 
-.before-human {
-  margin-top: -155px;
-  margin-left: 15px;
-}
 
-.after-human {
-  margin-left: -50px;
-  margin-bottom: -70px;
-}
 
-:is(.before-label, .after-label) {
+:is(div.before-label, div.after-label) {
   position: absolute;
   display: inline-flex;
   padding: 4px 16px;
@@ -193,17 +188,27 @@ select.lang_switcher {
   backdrop-filter: blur(2.200000047683716px);
 }
 
-.before-label {
+div.before-label {
   top: -30%;
   right: 52%;
 }
 
-.after-label {
+div.after-label {
   top: 10px;
   right: 15px;
 }
 
-.boldness_switcher_img {
+img.before-human {
+  margin-top: -155px;
+  margin-left: 15px;
+}
+
+img.after-human {
+  margin-left: -50px;
+  margin-bottom: -70px;
+}
+
+div.boldness_switcher_img {
   position: absolute;
   display: flex;
   gap: 20px;
@@ -212,7 +217,7 @@ select.lang_switcher {
   left: 15px;
 }
 
-.boldness_arrow {
+div.boldness_arrow {
   width: 62px;
   height: 62px;
   flex-shrink: 0;
@@ -226,11 +231,11 @@ select.lang_switcher {
   cursor: pointer;
 }
 
-.boldness_arrow:hover {
+div.boldness_arrow:hover {
   background: radial-gradient(rgb(255, 255, 255) 10%, #b9fffe 60%, #5fe4e4 100%);
 }
 
-.qualities {
+div.qualities {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -240,7 +245,7 @@ select.lang_switcher {
   gap: 20px;
 }
 
-.quality {
+div.quality {
   display: flex;
   height: 239px;
   width: 295px;
@@ -254,7 +259,7 @@ select.lang_switcher {
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
-.sub-title {
+div.sub-title {
   color: var(--text, #404040);
 
   font-family: "Manrope", sans-serif;
@@ -264,7 +269,7 @@ select.lang_switcher {
   line-height: normal;
 }
 
-.quality_text {
+div.quality_text {
   color: var(--text, #404040);
   width: 264px;
   font-size: 16px;
@@ -274,12 +279,15 @@ select.lang_switcher {
   line-height: normal;
 }
 
-.quality_img {
+img.quality_img {
   position: relative;
   left: -52px;
 }
 
-.patients_results {
+
+
+
+section.patients_results {
   width: 1240px;
   height: 579px;
   flex-shrink: 0;
@@ -445,7 +453,7 @@ select.lang_switcher {
 }
 
 
-.all_inclusive_packet {
+section.all_inclusive_packet {
   width: 1240px;
   height: 523px;
   flex-shrink: 0;
@@ -455,14 +463,15 @@ select.lang_switcher {
   justify-content: space-between;
 }
 
-.all_inclusive__packets {
+div.all_inclusive__packets {
   display: flex;
   gap: 20px;
 }
 
-.all_inclusive__packet {
+div.all_inclusive__packet {
   display: flex;
   flex-direction: column;
+  width: 295px;
 }
 
 .packet__img {
@@ -518,7 +527,7 @@ select.lang_switcher {
 }
 
 
-.suitable_transplants_packages {
+section.suitable_transplants_packages {
   width: 1240px;
   height: 807px;
   flex-shrink: 0;

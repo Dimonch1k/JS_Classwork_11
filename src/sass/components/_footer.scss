@@ -11,23 +11,39 @@ footer.footer {
   position: relative;
 }
 
+div.footer__content_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.horizontal-line {
+  border: 1px solid #fff;
+  opacity: 1;
+}
+
 div.footer__content {
   display: flex;
-  justify-content: center;
+  gap: 24px;
 }
 
 div.hair-img_socialMedia {
   display: flex;
   flex-direction: column;
-  width: max-content;
-  gap: 24px;
-  margin-right: 113px;
+  width: 25%;
+}
+
+div.socialMedia_networks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 div.social_media_footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: max-content;
   gap: 9px;
 }
 
@@ -48,10 +64,12 @@ div.social_media_img {
   height: 40px;
   border: 1px solid #fff;
   border-radius: 50%;
+  transition: all .6s ease-in-out;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .6s ease-in-out;
+  position: relative;
 }
 
 div.social_media_img:hover {
@@ -60,18 +78,38 @@ div.social_media_img:hover {
   cursor: pointer;
 }
 
+div.social_media_img a {
+  width: 24px;
+  height: 24px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+div.footer__main_content_block {
+  width: 66.66%;
+}
 
 div.footer__main_content {
-  height: 162px;
   display: flex;
-  gap: 176px;
+  flex-direction: column;
+  align-items: start;
+}
+
+div.links_contact_us {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   margin-top: 5px;
 }
 
 div.footer_links_groups {
   display: flex;
-  gap: 95px;
+  justify-content: space-between;
+  width: 50%;
 }
 
 ul.footer_links_group {
@@ -79,7 +117,8 @@ ul.footer_links_group {
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  margin-top: 7px;
+  margin: 7px 0 0 0;
+  padding: 0;
 }
 
 ul.footer_links_group li {
@@ -94,16 +133,26 @@ ul.footer_links_group li a {
 }
 
 ul.footer_links_group li a:hover {
+  text-shadow: 0px 0px 2px #FF783E,
+    0px 1px 2px #FF783E,
+    1px 2px 2px #FF783E;
   text-decoration: underline;
 }
 
 
 
-div.contact_us_footer {
+div.contact_us_footer_block {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 33px;
+}
+
+div.contact_us_footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 div.contact_us_heading {
@@ -118,18 +167,29 @@ div.contact_us_social_media {
   gap: 16px;
 }
 
+div.contact_us_social_media img {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+div.contact_us_social_media img:hover {
+  box-shadow: 0 2px 20px rgb(0, 128, 255);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
 button.callback_btn {
   display: flex;
   padding: 16px 50px;
-  gap: 8px;
+  justify-content: center;
 
   border: none;
   border-radius: 30px;
-  background-image: var(--Button, linear-gradient(93deg, #FFF 0%, rgb(195, 251, 250) 100%));
-  background-size: 300%;
-  background-position: left;
-  transition: 1s background-position ease-in-out;
-
+  background-image: var(--Button, linear-gradient(93deg, #FFF 30%, rgb(195, 251, 250) 92%));
+  background-size: 200%;
+  background-position: right;
+  transition: 1s background-position ease-in-out,
+    1s color ease-in-out;
   box-shadow: 0px 10px 10px 0px rgba(55, 113, 151, 0.15);
 
   color: #3CADAB;
@@ -138,5 +198,164 @@ button.callback_btn {
 }
 
 button.callback_btn:hover {
-  background-position: right;
+  background-position: left;
+  color: #FF783E;
+  transition: 1s background-position ease-in-out,
+    1s color ease-in-out
+}
+
+
+div.privacy_policy_powered_by__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+div.privacy_policy_footer {
+  display: flex;
+  justify-content: center;
+}
+
+div.privacy_policy_footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+div.privacy_policy_footer a:hover {
+  text-shadow: 0px 0px 2px rgb(0, 128, 255),
+    0px 1px 2px rgb(0, 128, 255),
+    1px 2px 2px rgb(0, 128, 255),
+    1px 3px 2px rgb(0, 128, 255),
+    2px 4px 2px rgb(0, 128, 255);
+
+  text-decoration: underline;
+}
+
+
+div.powered_by_footer {
+  display: inline-flex;
+  align-items: center;
+  color: var(--white, #FFFEFE);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+span.powered_by {
+  font-size: 14px;
+}
+
+span.powered_by:hover {}
+
+div.digital_nation_logo {
+  margin: 0 0 0 10px;
+}
+
+
+span.digital_nation {
+  font-size: 13px;
+  line-height: 106.5%;
+}
+
+span.digital_nation:hover {
+  text-shadow: 0 0 5px #FFF,
+    0 0 10px #FFF,
+    0 0 15px #FFF,
+    0 0 20px #49ff18,
+    0 0 30px #49FF18,
+    0 0 40px #49FF18,
+    0 0 55px #49FF18,
+    0 0 75px #49ff18;
+}
+
+@media screen and (max-width: 375px) {
+  footer.footer {
+    height: 819px;
+    padding: 30px 15px 47.75px;
+    font-size: 18px;
+  }
+
+  hr.horizontal-line {
+    margin: 0;
+  }
+
+  div.footer__content_block {
+    margin-top: 5px;
+    gap: 32px;
+  }
+
+  div.footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 32px;
+  }
+
+  div.hair-img_socialMedia {
+    width: 100%;
+  }
+
+  div.socialMedia_networks {
+    align-items: start;
+  }
+
+  div.social_media_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+
+  div.footer__main_content_block {
+    width: 100%;
+  }
+
+  div.links_contact_us {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  div.footer_links_groups {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  :is(div.footer_links_groups, div.footer_links_group) {
+    gap: 24px;
+  }
+
+  ul.footer_links_group {
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+
+  ul.footer_links_group li {
+    width: 100%;
+    text-align: center;
+  }
+
+  div.contact_us_footer_block,
+  div.contact_us_footer {
+    gap: 24px;
+  }
+
+  div.contact_us_heading {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  button.callback_btn {
+    width: 100%;
+  }
+
+
+  div.social_media_heading,
+  ul.footer_links_group li a {
+    font-size: 18px;
+  }
 }
