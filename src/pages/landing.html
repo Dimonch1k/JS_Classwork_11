@@ -28,8 +28,8 @@
         <img class="after-human z-2" src="../img/after-human.svg" alt="after human">
 
         <div class="boldness_switcher_img">
-          <div class="boldness_arrow"><img src="../img/chevron-left.svg" alt="left arrow"></div>
-          <div class="boldness_arrow"><img src="../img/chevron-right.svg" alt="right arrow"></div>
+          <button class="boldness_switch"><img src="../img/chevron-left.svg" alt="boldness_left"></button>
+          <button class="boldness_switch"><img src="../img/chevron-right.svg" alt="boldness_right"></button>
         </div>
       </div>
     </div>
@@ -509,14 +509,127 @@
     </div>
 
     <div class="suitable_packages_switcher">
-      <div class="sPackage_arrow"><img src="../img/chevron-left.svg" alt="left arrow"></div>
-      <div class="sPackage_arrow"><img src="../img/chevron-right.svg" alt="right arrow"></div>
+      <button class="sPackage_switch" id="sPackage_left_arrow"><img src="../img/chevron-left.svg"
+          alt="left arrow"></button>
+      <button class="sPackage_switch" id="sPackage_right_arrow"><img src="../img/chevron-right.svg"
+          alt="right arrow"></button>
     </div>
   </section>
 
   <!-- Questions -->
   <div class="questions_blank">
 
+    <div class="circles_effects">
+      <img src="../img/circle_orange_thin.svg" alt="circle orange thin">
+      <img src="../img/circle_blue_bold.svg" alt="circle blue bold" class="circle_blue_bold">
+    </div>
+
+    <!-- Background for  -->
+    <div style="position: absolute; bottom: 57px; right: 35px; z-index: 2;">
+      <div class="background-img_start_question">
+        <img src="../img/ellipse_bg_global_question.png" alt="background ellipse global start question">
+        <img src="../img/notepad_pencil-img.png" alt="notepad with pencil start question"
+          style="width: 400px; height: 400px;">
+        <img src="../img/ellipse_opacity_0.3_question.svg" alt="ellipse bottom of global s question"
+          style="bottom: 4.41px; right: 46px;">
+        <div class="ell_opacity_blue_s_question">
+          <img src="../img/done_effect_question.svg" alt="done for effect s question">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Questions container -->
+    <ul class="questions_container">
+
+      <!-- Start card -->
+      <li class="question_card" id="question_card_1">
+
+        <!-- Start card heading -->
+        <div class="question_s_card__heading">
+          Answer a few questions and get a free consultation
+        </div>
+
+        <div class="first_question" id="question_1">
+          <div class="question_block">
+            <div class="blank_number">
+              <span>1/6</span>
+            </div>
+            <span class="question_text">How long ago did your hair start falling out?</span>
+          </div>
+
+          <ul class="question_choose_checkbox">
+            <li class="card1_answer1 card1_answer"><input type="checkbox" id="q1_answer1">
+              <span class="answer_text">Less than a year ago</span>
+            </li>
+            <li class="card1_answer2 card1_answer"><input type="checkbox" id="q1_answer2">
+              <span class="answer_text">Up to 3 years </span>
+            </li>
+            <li class="card1_answer3 card1_answer"><input type="checkbox" id="q1_answer3">
+              <span class="answer_text">About 5 years</span>
+            </li>
+            <li class="card1_answer4 card1_answer"><input type="checkbox" id="q1_answer4">
+              <span class="answer_text">More than 5 years</span>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <!-- Background for  -->
+        <div style="position: absolute; bottom: 57px; right: 35px; z-index: 2;">
+          <div class="background-img_start_question">
+            <img src="../img/ellipse_bg_global_question.png" alt="background ellipse global start question" style="border-radius: 377px;
+            background: #69D2D2;
+            backdrop-filter: blur(5px);">
+
+            <img src="../img/notepad_pencil-img.png" alt="notepad with pencil start question"
+              style="width: 400px; height: 400px; z-index: 2;">
+
+            <img src="../img/ellipse_opacity_0.3_question.svg" alt="ellipse bottom of global s question"
+              style="bottom: 4.41px; right: 46px; ">
+
+            <div class="ell_opacity_blue_s_question">
+              <img src="../img/done_effect_question.svg" alt="done for effect s question"
+                style="backdrop-filter: blur(2px);">
+              <img src="../img/ellipse_opacity_0.4_blur_question.svg" alt="ellipse blur s question"
+                style="backdrop-filter: none;">
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <!-- 2 Card -->
+      <li class="question_card" id="question_card_2">
+
+      </li>
+
+      <!-- 3 Card -->
+      <li class="question_card" id="question_card_3">
+
+      </li>
+
+      <!-- 4 Card -->
+      <li class="question_card" id="question_card_4">
+
+      </li>
+
+      <!-- 5 Card -->
+      <li class="question_card" id="question_card_5">
+
+      </li>
+
+      <!-- 6 Card -->
+      <li class="question_card" id="question_card_6">
+
+      </li>
+
+      <!-- 7 Card -->
+      <li class="question_card" id="question_card_7">
+
+      </li>
+    </ul>
   </div>
 
   <!-- About clinic -->

@@ -1,11 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+
+:root {
+  --primary-color: #27BDBE;
+  --secondary-color: #FF783E;
+  --third-color: #6DDBD9;
+  --fourth-color: #FFC0A5;
+}
+
 header.header {
   height: 71px;
   width: 1240px;
   flex-shrink: 0;
   margin: 24px 0 70px 0;
   border-bottom: 1px solid #404040;
+}
+
+img {
+  object-fit: cover;
+}
+
+ul li {
+  list-style-type: none;
 }
 
 img.logo-img {
@@ -26,7 +42,6 @@ nav.header_navigation {
 nav.header_navigation ul {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +63,7 @@ nav.header_navigation ul li a {
 
 nav.header_navigation ul li:hover a {
   transition: 0.3s;
-  color: #ff783e;
+  color: var(--secondary-color);
 }
 
 button.leave_request_btn {
@@ -131,7 +146,7 @@ h2.section_title {
 }
 
 span.title_color {
-  color: #ff783e;
+  color: var(--secondary-color);
 }
 
 div.verification_ellipse {
@@ -168,7 +183,7 @@ button.book_consultation_btn {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 30px;
-  background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, #27bdbe 91.72%));
+  background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%));
   background-size: 300%;
   background-position: left;
   transition: 1s background-position ease-in-out;
@@ -232,22 +247,23 @@ div.suitable_packages_switcher {
   left: 15px;
 }
 
-div.boldness_arrow,
-div.sPackage_arrow {
+button.boldness_switch,
+button.sPackage_switch {
   width: 62px;
   height: 62px;
   flex-shrink: 0;
   background: #fff;
   border-radius: 50%;
+  border: none;
   filter: drop-shadow(0px 10px 10px rgba(56, 114, 151, 0.1));
 
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
-div.boldness_arrow:hover {
+button.boldness_switch:hover,
+button.sPackage_switch:hover {
   background: radial-gradient(rgb(255, 255, 255) 10%, #b9fffe 60%, #5fe4e4 100%);
 }
 
@@ -377,7 +393,7 @@ div.gallery {
   width: 610px;
   height: 566px;
   flex-shrink: 0;
-  background-color: #27bdbe;
+  background-color: var(--primary-color);
 }
 
 div.description {
@@ -622,7 +638,6 @@ ul.includes_cost_list li {
   gap: 12px;
   font-size: 14px;
   font-weight: normal;
-  list-style-type: none;
 }
 
 div.includes_cost_done {
@@ -684,7 +699,7 @@ button.contact_the_clinic {
   align-items: center;
   gap: 8px;
   border-radius: 30px;
-  background-image: var(--Button, linear-gradient(92deg, #6DDBD9 4.42%, #27bdbe 91.72%));
+  background-image: var(--Button, linear-gradient(92deg, var(--third-color) 4.42%, var(--primary-color) 91.72%));
   background-size: 300%;
   background-position: left;
   transition: 1s background-position ease-in-out;
@@ -730,11 +745,11 @@ div.special_price_num {
 
 div.suitable_package_1_special_price,
 div.suitable_package_3_special_price {
-  background: linear-gradient(92deg, #FFC0A5 0.82%, #FF783E 99.57%);
+  background: linear-gradient(92deg, var(--fourth-color) 0.82%, var(--secondary-color) 99.57%);
 }
 
 div.suitable_package_2_special_price {
-  background: #6DDBD9;
+  background: var(--third-color);
 }
 
 div.suitable_packages_switcher {
@@ -744,3 +759,123 @@ div.suitable_packages_switcher {
   gap: 12px;
   position: absolute;
 }
+
+
+
+
+div.questions_blank {
+  position: relative;
+  width: 1282px;
+  height: 686px;
+  flex-shrink: 0;
+  margin-top: 74px;
+
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+div.circles_effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 4px;
+}
+
+div.circles_effects>img {
+  vertical-align: top;
+}
+
+img.circle_blue_bold {
+  margin-top: 21px;
+}
+
+
+div.background-img_start_question {
+  position: relative;
+  width: 488px;
+  height: 488px;
+  background: url("../../img/global_start_question.svg") no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.background-img_start_question img {
+  position: absolute;
+}
+
+div.ell_opacity_blue_s_question {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  width: 111px;
+  height: 111px;
+
+  position: absolute;
+  top: 35.7px;
+  right: 35px;
+}
+
+
+
+
+#question_card_1 {
+  padding: 57px 0 67px 85px;
+}
+
+ul.questions_container {
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  width: 1240px;
+  height: 582px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: var(--primary-color);
+
+  color: #FFF;
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+div.question_s_card__heading {
+  width: 450px;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+div.first_question {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
+}
+
+div.question_block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+div.blank_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  width: 63px;
+  height: 63px;
+  flex-shrink: 0;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.40) 15.64%, rgba(255, 255, 255, 0.20) 78.01%);
+}
+
+span.question_text {}
