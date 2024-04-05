@@ -1,6 +1,11 @@
-main.landing {
-  width: 1240px;
-  height: 7133px;
+// main.landing {
+//   width: 1240px;
+//   height: 7133px;
+// }
+main {
+  &.landing {
+    background-color: red;
+  }
 }
 
 section.beat_boldness {
@@ -71,10 +76,7 @@ button.book_consultation_btn {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 30px;
-  background-image: var(
-    --Button,
-    linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%)
-  );
+  background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%));
   background-size: 300%;
   background-position: left;
   transition: 1s background-position ease-in-out;
@@ -101,16 +103,8 @@ button.book_consultation_btn:hover {
   gap: 8px;
 
   border-radius: 30px;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.1) 100%
-    ),
-    linear-gradient(
-      104deg,
-      rgba(255, 255, 255, 0.65) 10.03%,
-      rgba(255, 255, 255, 0.26) 89.26%
-    );
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
+    linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(2.200000047683716px);
 }
@@ -162,11 +156,7 @@ button.sPackage_switch {
 
 button.boldness_switch:hover,
 button.sPackage_switch:hover {
-  background: radial-gradient(
-    rgb(255, 255, 255) 10%,
-    #b9fffe 60%,
-    #5fe4e4 100%
-  );
+  background: radial-gradient(rgb(255, 255, 255) 10%, #b9fffe 60%, #5fe4e4 100%);
 }
 
 div.qualities {
@@ -583,14 +573,7 @@ button.contact_the_clinic {
   align-items: center;
   gap: 8px;
   border-radius: 30px;
-  background-image: var(
-    --Button,
-    linear-gradient(
-      92deg,
-      var(--third-color) 4.42%,
-      var(--primary-color) 91.72%
-    )
-  );
+  background-image: var(--Button, linear-gradient(92deg, var(--third-color) 4.42%, var(--primary-color) 91.72%));
   background-size: 300%;
   background-position: left;
   transition: 1s background-position ease-in-out;
@@ -635,11 +618,7 @@ div.special_price_num {
 
 div.suitable_package_1_special_price,
 div.suitable_package_3_special_price {
-  background: linear-gradient(
-    92deg,
-    var(--fourth-color) 0.82%,
-    var(--secondary-color) 99.57%
-  );
+  background: linear-gradient(92deg, var(--fourth-color) 0.82%, var(--secondary-color) 99.57%);
 }
 
 div.suitable_package_2_special_price {
@@ -752,11 +731,7 @@ div.blank_number {
   width: 63px;
   height: 63px;
   flex-shrink: 0;
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.4) 15.64%,
-    rgba(255, 255, 255, 0.2) 78.01%
-  );
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.4) 15.64%, rgba(255, 255, 255, 0.2) 78.01%);
 }
 
 div.blank_number span {
