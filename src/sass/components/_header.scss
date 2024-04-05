@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-
 :root {
-  --primary-color: #27BDBE;
-  --secondary-color: #FF783E;
-  --third-color: #6DDBD9;
-  --fourth-color: #FFC0A5;
+  --primary-color: #27bdbe;
+  --secondary-color: #ff783e;
+  --third-color: #6ddbd9;
+  --fourth-color: #ffc0a5;
 }
 
 header.header {
@@ -101,15 +100,6 @@ select.lang_switcher {
   border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-
 main.landing {
   width: 1240px;
   height: 7133px;
@@ -183,7 +173,10 @@ button.book_consultation_btn {
   gap: 8px;
   flex-shrink: 0;
   border-radius: 30px;
-  background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%));
+  background-image: var(
+    --Button,
+    linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%)
+  );
   background-size: 300%;
   background-position: left;
   transition: 1s background-position ease-in-out;
@@ -201,7 +194,6 @@ button.book_consultation_btn:hover {
   background-position: right;
 }
 
-
 :is(div.before-label, div.after-label) {
   position: absolute;
   display: inline-flex;
@@ -211,8 +203,16 @@ button.book_consultation_btn:hover {
   gap: 8px;
 
   border-radius: 30px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),
-    linear-gradient(104deg, rgba(255, 255, 255, 0.65) 10.03%, rgba(255, 255, 255, 0.26) 89.26%);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    linear-gradient(
+      104deg,
+      rgba(255, 255, 255, 0.65) 10.03%,
+      rgba(255, 255, 255, 0.26) 89.26%
+    );
   box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(2.200000047683716px);
 }
@@ -264,7 +264,11 @@ button.sPackage_switch {
 
 button.boldness_switch:hover,
 button.sPackage_switch:hover {
-  background: radial-gradient(rgb(255, 255, 255) 10%, #b9fffe 60%, #5fe4e4 100%);
+  background: radial-gradient(
+    rgb(255, 255, 255) 10%,
+    #b9fffe 60%,
+    #5fe4e4 100%
+  );
 }
 
 div.qualities {
@@ -315,9 +319,6 @@ img.quality_img {
   position: relative;
   left: -52px;
 }
-
-
-
 
 section.patients_results {
   width: 1240px;
@@ -376,9 +377,6 @@ div.video_text {
   margin-top: 8px;
 }
 
-
-
-
 section.globalmedik_clinic {
   width: 1240px;
   height: 680px;
@@ -427,9 +425,6 @@ span.desc_title {
   font-size: 18px;
   font-weight: 500;
 }
-
-
-
 
 section.our_doctors {
   margin-top: 120px;
@@ -481,16 +476,13 @@ span.doctor_name {
   padding: 8px 16px;
   border-radius: 30px;
   border: 1px solid var(--text, #404040);
-  background: #FFF;
+  background: #fff;
   font-weight: 700;
 }
 
 div.doctors_qualities_text {
   font-weight: 600;
 }
-
-
-
 
 section.all_inclusive_packet {
   width: 1240px;
@@ -543,14 +535,12 @@ div.done_ellipse {
   top: -22.5px;
   width: 45px;
   height: 45px;
-  background: #FFF;
-  box-shadow: 0 10px 10px rgba(56, 114, 151, 0.10);
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(56, 114, 151, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 div.done_mark {
@@ -564,9 +554,6 @@ div.packet_content {
   flex-direction: column;
   justify-content: space-between;
 }
-
-
-
 
 section.suitable_transplants_packages {
   width: 1240px;
@@ -590,8 +577,8 @@ div.suitable_packages {
 div.suitable_package {
   position: relative;
   border-radius: 20px;
-  border: 1px solid #5BE1FF;
-  background: #FFF;
+  border: 1px solid #5be1ff;
+  background: #fff;
   padding: 24px;
   width: 400px;
   height: 531px;
@@ -641,15 +628,14 @@ ul.includes_cost_list li {
 }
 
 div.includes_cost_done {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  box-shadow: 0 10px 10px rgba(56, 114, 151, 0.10);
+  box-shadow: 0 10px 10px rgba(56, 114, 151, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 div.select_suitable_options {
@@ -667,7 +653,7 @@ select.global_medic_support {
   gap: 8px;
   border-radius: 40px;
   border: 1px solid #787878;
-  background: #FFFFFF;
+  background: #ffffff;
 
   color: #787878;
   font-size: 14px;
@@ -699,14 +685,21 @@ button.contact_the_clinic {
   align-items: center;
   gap: 8px;
   border-radius: 30px;
-  background-image: var(--Button, linear-gradient(92deg, var(--third-color) 4.42%, var(--primary-color) 91.72%));
+  background-image: var(
+    --Button,
+    linear-gradient(
+      92deg,
+      var(--third-color) 4.42%,
+      var(--primary-color) 91.72%
+    )
+  );
   background-size: 300%;
   background-position: left;
   transition: 1s background-position ease-in-out;
   border: none;
 
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
-  color: #FFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
 }
@@ -715,7 +708,6 @@ button.contact_the_clinic:hover {
   background-position: right;
   transition: 1s background-position ease-in-out;
 }
-
 
 div.suitable_package_special_price {
   position: absolute;
@@ -734,18 +726,22 @@ div.special_price_num {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   flex-shrink: 0;
 
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
 }
 
 div.suitable_package_1_special_price,
 div.suitable_package_3_special_price {
-  background: linear-gradient(92deg, var(--fourth-color) 0.82%, var(--secondary-color) 99.57%);
+  background: linear-gradient(
+    92deg,
+    var(--fourth-color) 0.82%,
+    var(--secondary-color) 99.57%
+  );
 }
 
 div.suitable_package_2_special_price {
@@ -759,9 +755,6 @@ div.suitable_packages_switcher {
   gap: 12px;
   position: absolute;
 }
-
-
-
 
 div.questions_blank {
   position: relative;
@@ -782,14 +775,13 @@ div.circles_effects {
   gap: 4px;
 }
 
-div.circles_effects>img {
+div.circles_effects > img {
   vertical-align: top;
 }
 
 img.circle_blue_bold {
   margin-top: 21px;
 }
-
 
 div.background-img_start_question {
   position: relative;
@@ -807,7 +799,6 @@ div.background-img_start_question img {
 }
 
 div.ell_opacity_blue_s_question {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -821,20 +812,6 @@ div.ell_opacity_blue_s_question {
   right: 35px;
 }
 
-
-
-div.questions_container div.question_card {
-  padding: 66px 155px 98px;
-}
-
-#question_card_1 {
-  padding: 57px 0 67px 85px;
-}
-
-#question_1 {
-  margin-bottom: 15px;
-}
-
 ul.questions_container {
   z-index: 1;
   position: relative;
@@ -846,28 +823,20 @@ ul.questions_container {
   flex-shrink: 0;
   border-radius: 40px;
 
-  color: #FFF;
+  color: #fff;
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-ul.questions_container li {
+ul.questions_container > li {
   background: var(--primary-color);
-}
-
-div.question_s_card__heading {
-  width: 450px;
-  font-size: 32px;
-  margin-bottom: 25px;
-}
-
-div.first_question {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  font-size: 20px;
+  border-radius: 30px;
+  padding: 66px 155px 98px 155px;
+  width: 1025px;
+  height: 582px;
+  flex-shrink: 0;
 }
 
 div.question_block {
@@ -885,7 +854,11 @@ div.blank_number {
   width: 63px;
   height: 63px;
   flex-shrink: 0;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.40) 15.64%, rgba(255, 255, 255, 0.20) 78.01%);
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.4) 15.64%,
+    rgba(255, 255, 255, 0.2) 78.01%
+  );
 }
 
 div.blank_number span {
@@ -895,7 +868,6 @@ div.blank_number span {
 span.question_text {
   font-weight: 600;
 }
-
 
 ul.question_choose_answer {
   display: flex;
@@ -931,7 +903,6 @@ ul.question_choose_answer li input[type="checkbox"]:hover {
   cursor: pointer;
 }
 
-
 button.next_question_btn {
   padding: 15px 50px;
   background: var(--primary-color);
@@ -941,11 +912,54 @@ button.next_question_btn {
   font-weight: 600;
 
   border-radius: 30px;
-  border: 2px solid #FFF;
-
+  border: 2px solid #fff;
 }
 
 button.next_question_btn:hover {
   background: linear-gradient(to right, #00b4db, #0083b0);
   transition: background 1s ease-in-out;
+}
+
+span.question_text {
+  color: var(--White, #fffefe);
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+div.other_question {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  font-size: 20px;
+}
+
+div.question_s_card__heading {
+  width: 450px;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+#question_text_s_card {
+  font-size: 20px !important;
+}
+
+#question_card_1 {
+  padding: 57px 0 67px 85px;
+  width: 1240px !important;
+  height: 582px;
+  flex-shrink: 0;
+}
+
+#question_1 {
+  margin-bottom: 15px;
+}
+
+div.first_question {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 20px;
 }
