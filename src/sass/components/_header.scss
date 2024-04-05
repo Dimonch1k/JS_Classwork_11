@@ -823,9 +823,16 @@ div.ell_opacity_blue_s_question {
 
 
 
+div.questions_container div.question_card {
+  padding: 66px 155px 98px;
+}
 
 #question_card_1 {
   padding: 57px 0 67px 85px;
+}
+
+#question_1 {
+  margin-bottom: 15px;
 }
 
 ul.questions_container {
@@ -838,13 +845,16 @@ ul.questions_container {
   height: 582px;
   flex-shrink: 0;
   border-radius: 40px;
-  background: var(--primary-color);
 
   color: #FFF;
   font-family: "Manrope", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+ul.questions_container li {
+  background: var(--primary-color);
 }
 
 div.question_s_card__heading {
@@ -878,4 +888,64 @@ div.blank_number {
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.40) 15.64%, rgba(255, 255, 255, 0.20) 78.01%);
 }
 
-span.question_text {}
+div.blank_number span {
+  font-weight: 400;
+}
+
+span.question_text {
+  font-weight: 600;
+}
+
+
+ul.question_choose_answer {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  font-size: 20px;
+  padding-left: 4.7rem;
+}
+
+ul.question_choose_answer li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+ul.question_choose_answer li input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  accent-color: var(--primary-color);
+  appearance: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+ul.question_choose_answer li input[type="checkbox"]:checked {
+  appearance: initial;
+  accent-color: #fff;
+  content: "../../img/done_checkbox_question.svg";
+  cursor: pointer;
+}
+
+ul.question_choose_answer li input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+
+button.next_question_btn {
+  padding: 15px 50px;
+  background: var(--primary-color);
+  transition: background 1s ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 30px;
+  border: 2px solid #FFF;
+
+}
+
+button.next_question_btn:hover {
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  transition: background 1s ease-in-out;
+}
