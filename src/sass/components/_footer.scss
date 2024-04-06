@@ -11,14 +11,14 @@ footer.footer {
   position: relative;
 }
 
-div.footer__content_block {
+div.footer__content-wrapper {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 28px;
 }
 
-.horizontal-line {
+hr.footer__horizontal-line {
   border: 1px solid #fff;
   opacity: 1;
 }
@@ -246,7 +246,6 @@ span.powered_by {
   font-size: 14px;
 }
 
-span.powered_by:hover {}
 
 div.digital_nation_logo {
   margin: 0 0 0 10px;
@@ -280,7 +279,7 @@ span.digital_nation:hover {
     margin: 0;
   }
 
-  div.footer__content_block {
+  div.footer__content-wrapper {
     margin-top: 5px;
     gap: 32px;
   }

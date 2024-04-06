@@ -1,5 +1,5 @@
 {
-  "name": "red-team-template",
+  "name": "landing_page_layout",
   "version": "2.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -30,6 +30,8 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "html-import-partials": "^1.0.1",
+    "sass": "^1.74.1",
+    "scss": "^0.2.4",
     "waypoints": "^4.0.1"
   },
   "description": ""

@@ -1,98 +1,107 @@
-// main.landing {
-//   width: 1240px;
-//   height: 7133px;
-// }
 main {
   &.landing {
-    background-color: red;
+    position: relative;
+    margin-bottom: 162px;
+
+    >section.landing__beat-boldness {
+
+      >div.hair-transplants__wrapper {
+        height: 529px;
+        display: flex;
+        align-items: center;
+        background: url("../../img/G_global.svg") no-repeat 100% 44.5%;
+
+        >div.hair-transplants {
+          max-width: 597px;
+          display: grid;
+          gap: 20px;
+
+          div.verification-ellipse {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 56px;
+            height: 56px;
+            background: url("../../img/verification_ellipse.svg") no-repeat;
+          }
+
+          p.verification_text {
+            width: 245px;
+            color: var(--text, #404040);
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    section.landing__patients-results {}
+
+    section.landing__globalmedik-clinic {}
+
+    section.landing__our-doctors {}
+
+    section.landing__all-inclusive {}
+
+    section.landing__suitable_transplants_packages {}
+
+    div.landing__questions_blank {}
+
+    section.landing__about_clinic {}
+
+    div.landing__frequently_asked_questions {}
   }
 }
 
-section.beat_boldness {
-  width: 1240px;
-  height: 768px;
-  position: relative;
-  margin-bottom: 162px;
-}
-
-div.hair_transplants {
-  height: 529px;
-  display: flex;
-  align-items: center;
-  background: url("../../img/G_global.svg") no-repeat 100% 44.5%;
-}
-
-div.hair_transplants_block {
-  max-width: 597px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 
 h2.section_title {
   color: var(--text, #404040);
   font-family: "Manrope", sans-serif;
   font-size: 48px;
-  font-style: normal;
   font-weight: 600;
   line-height: 110%;
+
+  >span.title_color {
+    color: var(--secondary-color);
+  }
 }
 
-span.title_color {
-  color: var(--secondary-color);
-}
-
-div.verification_ellipse {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 56px;
-  height: 56px;
-  background: url("../../img/verification_ellipse.svg") no-repeat;
-}
-
-img.verification_mark {
-  position: relative;
-}
-
-p.verification_text {
-  width: 245px;
-  color: var(--text, #404040);
-  font-family: "Manrope", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-button.book_consultation_btn {
-  display: flex;
-  width: max-content;
-  height: 54px;
-  padding: 16px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-  border-radius: 30px;
-  background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%));
-  background-size: 300%;
-  background-position: left;
-  transition: 1s background-position ease-in-out;
+button {
   border: none;
 
-  color: white;
-  font-family: "Manrope", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  &.book-consultation-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: max-content;
+    height: 54px;
+    padding: 16px 24px;
+
+    border-radius: 30px;
+    background-image: var(--Button, linear-gradient(92deg, #7ed8d7 4.42%, var(--primary-color) 91.72%));
+    background-size: 300%;
+    background-position: left;
+    transition: 1s background-position ease-in-out;
+    border: none;
+
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+      background-position: right;
+    }
+  }
 }
 
-button.book_consultation_btn:hover {
-  background-position: right;
-}
+
+
+
+
+
 
 :is(div.before-label, div.after-label) {
   position: absolute;
@@ -160,9 +169,6 @@ button.sPackage_switch:hover {
 }
 
 div.qualities {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   display: flex;
   align-items: start;
   width: 1240px;
@@ -208,13 +214,13 @@ img.quality_img {
   left: -52px;
 }
 
-section.patients_results {
-  width: 1240px;
-  height: 579px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+
+
+section.landing__patients-results {
+  margin-top: 168px;
+  display: grid;
+  gap: 48px;
 }
 
 div.videos_block {
@@ -265,14 +271,13 @@ div.video_text {
   margin-top: 8px;
 }
 
-section.globalmedik_clinic {
-  width: 1240px;
-  height: 680px;
-  flex-shrink: 0;
+
+
+
+section.landing__globalmedik-clinic {
   margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  gap: 48px;
 }
 
 div.gallery {
@@ -308,83 +313,78 @@ span.desc_title {
   font-weight: 700;
 }
 
-:is(div.location_text, div.offers_text, button.book_consultation_btn) {
+:is(div.location_text, div.offers_text, button.book-consultation-btn) {
   margin-left: 40px;
   font-size: 18px;
   font-weight: 500;
 }
 
-section.our_doctors {
-  margin-top: 120px;
-  width: 100%;
-  height: 681px;
-  display: flex;
-  flex-direction: column;
+
+
+section.landing__our-doctors {
+  display: grid;
   gap: 34px;
+  margin-top: 120px;
+
   color: var(--text, #404040);
   font-family: "Manrope", sans-serif;
   font-size: 20px;
-  font-style: normal;
   line-height: normal;
 }
 
 div.about_doctors_block {
   display: flex;
   justify-content: end;
-  height: 100%;
 }
 
 div.about_doctors {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 925px;
-  height: 100%;
+  display: grid;
+  gap: 24px;
+  width: min-content;
 }
 
 div.doctors {
   display: flex;
-  height: 371px;
   gap: 20px;
 }
 
 div.doctor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   gap: 8px;
 }
 
 img.doctor_img {
-  flex-shrink: 0;
   border-radius: 20px;
 }
 
 span.doctor_name {
   padding: 8px 16px;
-  border-radius: 30px;
-  border: 1px solid var(--text, #404040);
+  width: max-content;
   background: #fff;
   font-weight: 700;
+
+  border-radius: 30px;
+  border: 1px solid var(--text, #404040);
 }
 
 div.doctors_qualities_text {
   font-weight: 600;
 }
 
-section.all_inclusive_packet {
-  width: 1240px;
-  height: 523px;
-  flex-shrink: 0;
-  margin-top: 130px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+
+
+
+section.landing__all-inclusive {
+  margin-top: 120px;
+  display: grid;
+  gap: 62px;
 }
 
 div.all_inclusive__packets {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 div.all_inclusive__packet {
@@ -443,17 +443,18 @@ div.packet_content {
   justify-content: space-between;
 }
 
-section.suitable_transplants_packages {
-  width: 1240px;
-  height: 807px;
-  flex-shrink: 0;
+
+
+
+section.landing__suitable_transplants_packages {
   margin-top: 120px;
   color: #404040;
   font-family: "Manrope", sans-serif;
   font-size: 20px;
-  font-style: normal;
   line-height: normal;
-  position: relative;
+
+  display: grid;
+  gap: 37px;
 }
 
 div.suitable_packages {
@@ -626,12 +627,14 @@ div.suitable_package_2_special_price {
 }
 
 div.suitable_packages_switcher {
-  bottom: 0;
-  right: 0;
-  left: unset;
+  display: flex;
   gap: 12px;
-  position: absolute;
 }
+
+
+
+
+
 
 div.questions_blank {
   position: relative;
@@ -652,7 +655,7 @@ div.circles_effects {
   gap: 4px;
 }
 
-div.circles_effects > img {
+div.circles_effects>img {
   vertical-align: top;
 }
 
@@ -707,7 +710,7 @@ ul.questions_container {
   line-height: normal;
 }
 
-ul.questions_container > li {
+ul.questions_container>li {
   background: var(--primary-color);
   border-radius: 30px;
   padding: 66px 155px 98px 155px;
